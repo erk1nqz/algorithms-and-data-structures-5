@@ -2,6 +2,13 @@
 ### Assignment 5 | BinarySearchTree
 
 ## 👀 BST.java
+### 🖇️  function: size
+> **Description:** This method returns the size of the binary search tree.
+```java
+public int size() {
+        return size;
+    }
+```
 ### 🖇️  function: put
 > **Description:** This method inserts a key-value pair into the binary search tree. If the key already exists, the value is updated.
 ```java
