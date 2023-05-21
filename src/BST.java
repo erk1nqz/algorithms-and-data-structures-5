@@ -14,6 +14,10 @@ public class BST<K extends Comparable<K>, V> {
             this.key = key;
             this.val = val;
         }
+        @Override
+        public String toString() {
+            return "{key: " + this.key + " value: " + this.val + "}";
+        }
     }
 
     public void put(K key, V val) {
