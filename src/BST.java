@@ -122,6 +122,29 @@ public class BST<K extends Comparable<K>, V> {
         }
     }
 
+    public boolean consist(K key) {
+        Node node = consist(root, key);
+        if (node == null) {
+            return false;
+        }
+        return true;
+
+    }
+
+
+
+    private Node consist(Node current, K key) {
+        if (current == null || key.compareTo((K) current.key) == 0) {
+            return current;
+        }
+        if (key.compareTo((K) current.key) < 0) {
+            return get(current.left, key);
+        } else {
+            return get(current.right, key);
+        }
+
+    }
+
     public int size() {
         return size;
     }

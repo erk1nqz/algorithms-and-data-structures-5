@@ -3,7 +3,7 @@ import java.util.Iterator;
 public class Main {
     public static void main(String[] args) {
         BST<Integer, String> bst = new BST();
-
+        bst.consist(4);
         for (int i = 0; i < 12; i++) {
             bst.put(i, "Value " + i);
         }
